@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = ( req,res,next )=>{
-  if(typeof req.query.name == 'string' ){
+  if(req.query.name){
     next();
   }
   else {
